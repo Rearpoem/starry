@@ -14,8 +14,8 @@ const Typer = (props) => {
             strings: [
                 '如果愿望可以实现，我仍想与你共度余生'
             ],
-            typeSpeed: 100,
-            backSpeed: 50,
+            typeSpeed: 110,
+            backSpeed: 100,
         };
 
         // elRef refers to the <span> rendered below
@@ -32,7 +32,7 @@ const Typer = (props) => {
         <div>
             <div className="wrap">
                 <div>
-                    <div style={{color:"white",fontSize:80,margin:"auto"}}  ref={el} />
+                    <span style={{color:"white",fontSize:50,margin:"auto"}}  ref={el} />
                 </div>
                 {/*<button onClick={() => typed.current.toggle()}>Toggle</button>*/}
                 {/*<button onClick={() => typed.current.start()}>Start</button>*/}

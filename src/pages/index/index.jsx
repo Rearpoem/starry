@@ -1,9 +1,11 @@
 import starry from "../../images/starry.jpg"
-import Typed from "typed.js";
-import bk from './bk.css';
 import { Breadcrumb, Layout, Menu } from 'antd';
 import React from 'react';
 import Typer from "../Typer";
+import Body from "../Body";
+import OverPack from "../OverPack";
+import MyOverPack from "../OverPack";
+import MyCard from "../MyCard";
 const { Header, Content, Footer } = Layout;
 
 
@@ -14,11 +16,11 @@ const Index = (props) => {
     return (
 
         <Layout className="layout">
-            <Header>
-                FHun Starry
-            </Header>
+            {/*<Header>*/}
+            {/*    FHun Starry*/}
+            {/*</Header>*/}
             <Content
-                style={{height:"100%"}}
+                style={{height:"100%",width:"100%"}}
             >
                 <body
                     background = {starryUrl}
@@ -28,12 +30,20 @@ const Index = (props) => {
                 <Typer/>
                 </body>
             </Content>
+            <MyCard/>
+
+            <MyCard/>
             <Footer
-                style={{
-                    textAlign: 'center',
-                }}
+                // style={{
+                //     textAlign: 'center',
+                //     height:1000,
+                // }}
+                style={{height:1000,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
             >
-                FHun Starry
+
+                <MyOverPack/>
+                <Body/>
+
             </Footer>
         </Layout>
 
