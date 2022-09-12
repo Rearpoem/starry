@@ -2,10 +2,7 @@ import starry from "../../images/starry.jpg"
 import { Breadcrumb, Layout, Menu } from 'antd';
 import React from 'react';
 import Typer from "../Typer";
-import Body from "../Body";
-import OverPack from "../OverPack";
-import MyOverPack from "../OverPack";
-import MyCard from "../MyCard";
+import Roll from "../Roll";
 const { Header, Content, Footer } = Layout;
 
 
@@ -24,27 +21,29 @@ const Index = (props) => {
             >
                 <body
                     background = {starryUrl}
-                    style={{padding: 0,height:1000,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
+                    style={{padding: 0,height:1080,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
                 >
-                {/*<div style={{color:"white",fontSize:80,margin:"auto"}}>如果愿望可以实现，我仍想与你共度余生</div>*/}
                 <Typer/>
                 </body>
             </Content>
-            <MyCard/>
 
-            <MyCard/>
-            <Footer
-                // style={{
-                //     textAlign: 'center',
-                //     height:1000,
-                // }}
-                style={{height:1000,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
-            >
+            <Roll/>
+            {/*<MyCard/>*/}
 
-                <MyOverPack/>
-                <Body/>
+            {/*<MyCard/>*/}
+            {/*<MyCard2/>*/}
+            {/*<Footer*/}
+            {/*    // style={{*/}
+            {/*    //     textAlign: 'center',*/}
+            {/*    //     height:1000,*/}
+            {/*    // }}*/}
+            {/*    style={{height:1000,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}*/}
+            {/*>*/}
 
-            </Footer>
+            {/*    <MyOverPack/>*/}
+            {/*    <Body/>*/}
+
+            {/*</Footer>*/}
         </Layout>
 
 

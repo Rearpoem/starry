@@ -12,10 +12,10 @@ const Typer = (props) => {
     React.useEffect(() => {
         const options = {
             strings: [
-                '如果愿望可以实现，我仍想与你共度余生'
+                '如果愿望可以实现，我仍想与你共度余生。'
             ],
-            typeSpeed: 110,
-            backSpeed: 100,
+            typeSpeed: 75,
+            backSpeed: 150,
         };
 
         // elRef refers to the <span> rendered below
