@@ -11,40 +11,32 @@ const Index = (props) => {
     const starryUrl =starry;
 
     return (
-
-        <Layout className="layout">
-            {/*<Header>*/}
-            {/*    FHun Starry*/}
-            {/*</Header>*/}
-            <Content
-                style={{height:"100%",width:"100%"}}
-            >
-                <body
-                    background = {starryUrl}
-                    style={{padding: 0,height:1080,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
+        <div>
+            <Layout className="layout">
+                {/*<Header>*/}
+                {/*    FHun Starry*/}
+                {/*</Header>*/}
+                <Content
+                    style={{height:"100%",width:"100%"}}
                 >
-                <Typer/>
-                </body>
-            </Content>
+                    <body
+                        background = {starryUrl}
+                        style={{padding: 0,height:1080,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}
+                    >
+                    <Typer/>
+                    </body>
+                </Content>
 
-            <Roll/>
-            {/*<MyCard/>*/}
+                <Roll/>
 
-            {/*<MyCard/>*/}
-            {/*<MyCard2/>*/}
-            {/*<Footer*/}
-            {/*    // style={{*/}
-            {/*    //     textAlign: 'center',*/}
-            {/*    //     height:1000,*/}
-            {/*    // }}*/}
-            {/*    style={{height:1000,width:"100%",display: "flex",alignItems:"center",justifyContent:"center"}}*/}
-            {/*>*/}
 
-            {/*    <MyOverPack/>*/}
-            {/*    <Body/>*/}
+            </Layout>
 
-            {/*</Footer>*/}
-        </Layout>
+
+
+        </div>
+
+
 
 
     )
