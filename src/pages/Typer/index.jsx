@@ -12,10 +12,25 @@ const Typer = (props) => {
     React.useEffect(() => {
         const options = {
             strings: [
-                '如果愿望可以实现，我仍想与你共度余生'
+                '如果愿望可以实现，我仍想与你共度余生。^1000',
+                '总会有一个温柔的人，给你带来最温柔的月亮。',
+                '那不是我的月亮,但的确有一刻月光照在了我的身上。',
             ],
-            typeSpeed: 110,
-            backSpeed: 100,
+            //打字速度
+            typeSpeed: 75,
+            //小时速度
+            backSpeed: 0,
+            //光标
+            cursorChar:"_",
+            //数组间间隔时间
+            startDelay:500,
+            //循环
+            loop:true,
+            //淡出（没搞明白咋弄出效果的）
+            fadeOut:true,
+            fadeOutDelay:100,
+            fadeOutClass:"typed-fade-out",
+
         };
 
         // elRef refers to the <span> rendered below
@@ -34,11 +49,6 @@ const Typer = (props) => {
                 <div>
                     <span style={{color:"white",fontSize:50,margin:"auto"}}  ref={el} />
                 </div>
-                {/*<button onClick={() => typed.current.toggle()}>Toggle</button>*/}
-                {/*<button onClick={() => typed.current.start()}>Start</button>*/}
-                {/*<button onClick={() => typed.current.stop()}>Stop</button>*/}
-                {/*<button onClick={() => typed.current.reset()}>Reset</button>*/}
-                {/*<button onClick={() => typed.current.destroy()}>Destroy</button>*/}
             </div>
         </div>
 
